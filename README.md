@@ -1,17 +1,13 @@
-<h1 align="center">AI-WEAR: Text Reader Glasses for Visually Impaired Students</h1>
-<h3 align="center">Using Raspberry Pi with Audio-Visual Call and Google Assistance</h3>
+<h1 align="center">AI-WEAR: Text Reader Glasses for Visually Impaired Students Using Raspberry Pi with Audio-Visual Call and Google Assistance</h1>
 
 ## 📌 Overview
 <p>
-AI-WEAR is an assistive technology designed to help visually impaired students by integrating 
-<strong>Optical Character Recognition (OCR)</strong>, <strong>Text-to-Speech (TTS)</strong>, and 
-<strong>Google Assistant</strong> features into smart glasses. 
-The device enables users to read text, interact with teachers via video calls, 
-and access real-time information—all through a <strong>Raspberry Pi-based system</strong>.
+AI-WEAR is an assistive technology designed to help visually impaired students by integrating <strong>Optical Character Recognition (OCR)</strong>, <strong>Text-to-Speech (TTS)</strong>, and <strong>Google Assistant</strong> features into smart glasses.  
+The device uses OCR to recognize text in front of the user, converts it into speech via TTS, enables interaction with teachers via video calls, and provides real-time information—all through a Raspberry Pi-based system.
 </p>
 
 <ul>
-  <li>📖 <strong>Text Reader</strong> – Converts printed text to speech using OpenCV & Tesseract OCR.</li>
+  <li>📖 <strong>Text Reader</strong> – Converts printed text to speech using OpenCV, Tesseract OCR & Text-to-speech (TTS).</li>
   <li>🎤 <strong>Voice Assistance</strong> – Google Assistant integration for hands-free interaction.</li>
   <li>📹 <strong>Video Call Support</strong> – Real-time video streaming via Jitsi Meet.</li>
   <li>🔘 <strong>Braille-Based Controls</strong> – User-friendly buttons with Braille engraving.</li>
@@ -41,23 +37,49 @@ and access real-time information—all through a <strong>Raspberry Pi-based syst
   <li>OpenCV (Image Processing)</li>
   <li>Tesseract OCR (Optical Character Recognition)</li>
   <li>Google Assistant API</li>
-  <li>Jitsi Meet (Video Conferencing)</li>
+  <li>Pico TTS</li>
+  <li>Jitsi Meet API (Video Conferencing)</li>
   <li>Python (Main Programming Language)</li>
 </ul>
 
 <h2>⚙️ System Architecture</h2>
 <p><img src="<insert RPI system flowchart image>" alt="RPI System Flowchart" width="600"></p>
-<p>The system captures images, processes text via OCR, converts text to speech, 
-and allows users to communicate with teachers through real-time video conferencing.</p>
 
-<h2>📖 How It Works</h2>
+<p>The AI-WEAR system is designed as a compact, self-contained assistive device that integrates 
+hardware components with intelligent software to process and deliver real-time text-to-speech conversion and communication features. 
+The system follows a structured workflow to ensure seamless functionality for visually impaired users.</p>
+
+<h3>📌 System Workflow:</h3>
 <ol>
-  <li><strong>Text Recognition:</strong> The camera captures an image of text.</li>
-  <li><strong>OCR Processing:</strong> OpenCV & Tesseract extract text from the image.</li>
-  <li><strong>Text-to-Speech:</strong> The system reads aloud the extracted text.</li>
-  <li><strong>Online Assistance:</strong> Users can access Google Assistant for additional support.</li>
-  <li><strong>Video Calling:</strong> Students can connect with their teachers in real-time.</li>
+  <li><strong>Image Acquisition:</strong> The Pi Camera captures an image of the text.</li>
+  <li><strong>Preprocessing:</strong> OpenCV enhances the image by converting it to grayscale, 
+      binarizing it, and removing noise to improve OCR accuracy.</li>
+  <li><strong>Text Extraction:</strong> Tesseract OCR processes the image and extracts readable text.</li>
+  <li><strong>Text-to-Speech Conversion:</strong> The extracted text is passed to Pico TTS, which 
+      converts it into an audio output.</li>
+  <li><strong>Audio Output:</strong> The system plays the generated speech through the connected 
+      speaker or headset.</li>
+  <li><strong>Online Assistance (Optional):</strong> If users need further help, they can interact 
+      with Google Assistant for additional information.</li>
+  <li><strong>Video Conferencing (Optional):</strong> If necessary, users can initiate a real-time 
+      video call with their teachers using Jitsi Meet.</li>
 </ol>
+
+<h3>📡 Connectivity:</h3>
+<ul>
+  <li>The system connects to the internet via <strong>Wi-Fi</strong> or <strong>GSM/GPRS Module</strong> 
+      to enable Google Assistant and video conferencing.</li>
+  <li>If no internet connection is available, the text-to-speech function still operates offline.</li>
+</ul>
+
+<h3>🔋 Power Management:</h3>
+<ul>
+  <li>The device is powered by a <strong>10,000mAh power bank</strong>, allowing extended usage of up to 8 hours.</li>
+  <li>Battery optimization techniques ensure efficient power consumption while running multiple processes.</li>
+</ul>
+
+<p>This architecture ensures that AI-WEAR operates efficiently both online and offline, providing 
+a reliable assistive solution for visually impaired students.</p>
 
 <h2>🚀 Installation & Setup</h2>
 <pre>
@@ -74,20 +96,16 @@ and allows users to communicate with teachers through real-time video conferenci
    <code>python main.py</code>
 </pre>
 
-<h2>📝 Research Paper</h2>
-<p>📄 <a href="./docs/AI-WEAR_Research.pdf"><strong>Full Research Paper (PDF)</strong></a></p>
-
 <h2>🎯 Future Improvements</h2>
 <ul>
   <li>Enhance camera resolution for better text recognition.</li>
   <li>Implement <strong>Braille system reader</strong> for better accessibility.</li>
   <li>Add <strong>mathematical equation detection</strong> for STEM learning.</li>
   <li>Optimize battery efficiency for longer usage.</li>
+  <li>Optimize battery efficiency for longer usage.</li>
+   <li>Develop a <strong>lighter and more compact version</strong> for better portability.</li>
 </ul>
 
 <h2>📩 Contact & Contributions</h2>
-<p>Want to contribute or ask questions? Reach out via:</p>
-<ul>
-  <li>📧 Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-  <li>🔗 LinkedIn: <a href="https://linkedin.com/in/yourname">Your Profile</a></li>
-</ul>
+<p>Developed by: <strong>Vincent Manlesis & Andrey Manguiat</strong></p>
+
