@@ -114,5 +114,5 @@ a reliable assistive solution for visually impaired students.</p>
 
 
 <h2>📩 Contact & Contributions</h2>
-<p>Developed by: <strong>Vincent Manlesis & Andrey Manguiat</strong></p>
+<p>Developed by: <strong>Vincent Manlesis & Andrei Manguiat</strong></p>
 
