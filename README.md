@@ -16,11 +16,17 @@ The device uses OCR to recognize text in front of the user, converts it into spe
 </ul>
 
 <h2>🔗 Project Details</h2>
-<p>For more details, check the full <a href="./docs/README.md"><strong>Project Documentation</strong></a>.</p>
+<p>This project integrates <strong>Optical Character Recognition (OCR)</strong>, <strong>Text-to-Speech (TTS)</strong>, <strong>Google Assistant</strong> and <strong>Video Call Support</strong> to assist visually impaired students in reading and communication.</p>
+<p>For technical insights, explore the <a href="#⚙️-system-architecture"><strong>System Architecture</strong></a> and <a href="#🛠️-tech-stack"><strong>Tech Stack</strong></a> sections.</p>
+
 
 <h2>📷 Project Images</h2>
-<p><img src="<insert system prototype image>" alt="System Prototype" width="600"></p>
-<p><img src="<insert system block diagram image>" alt="System Block Diagram" width="600"></p>
+<h3>🔹 System Prototype</h3>
+<p>This image showcases the physical prototype of the AI-WEAR device, including its key components such as the Raspberry Pi, camera module, speaker, and control buttons.</p>
+<p><img src="images/System Prototype.jpg" alt="System Prototype" width="600"></p>
+<h3>🔹 System Block Diagram</h3>
+<p>The block diagram illustrates the architecture of AI-WEAR, highlighting how different hardware and software components interact to process text, generate speech, and enable communication.</p>
+<p><img src="images/System Block Diagram.png" alt="System Block Diagram" width="600"></p>
 
 <h2>🛠️ Tech Stack</h2>
 <h3>Hardware:</h3>
@@ -42,8 +48,14 @@ The device uses OCR to recognize text in front of the user, converts it into spe
   <li>Python (Main Programming Language)</li>
 </ul>
 
+<h3>Operating System & Software:</h3>
+<ul>
+  <li><strong>Operating System:</strong> Raspberry Pi OS (Raspbian)</li>
+  <li><strong>Remote Access:</strong> VNC Viewer</li>
+</ul>
+
 <h2>⚙️ System Architecture</h2>
-<p><img src="<insert RPI system flowchart image>" alt="RPI System Flowchart" width="600"></p>
+<p><img src="images/RPI System Flow Chart.png" alt="RPI System Flowchart" width="600"></p>
 
 <p>The AI-WEAR system is designed as a compact, self-contained assistive device that integrates 
 hardware components with intelligent software to process and deliver real-time text-to-speech conversion and communication features. 
@@ -81,30 +93,25 @@ The system follows a structured workflow to ensure seamless functionality for vi
 <p>This architecture ensures that AI-WEAR operates efficiently both online and offline, providing 
 a reliable assistive solution for visually impaired students.</p>
 
-<h2>🚀 Installation & Setup</h2>
-<pre>
-1. Clone the repository:
-   <code>git clone https://github.com/yourusername/ai-wear.git</code>
-   <code>cd ai-wear</code>
-
-2. Install Dependencies:
-   <code>sudo apt-get update</code>
-   <code>sudo apt-get install tesseract-ocr python3-opencv</code>
-   <code>pip install speechrecognition gtts opencv-python google-api-python-client</code>
-
-3. Run the Application:
-   <code>python main.py</code>
-</pre>
-
 <h2>🎯 Future Improvements</h2>
 <ul>
-  <li>Enhance camera resolution for better text recognition.</li>
-  <li>Implement <strong>Braille system reader</strong> for better accessibility.</li>
-  <li>Add <strong>mathematical equation detection</strong> for STEM learning.</li>
-  <li>Optimize battery efficiency for longer usage.</li>
-  <li>Optimize battery efficiency for longer usage.</li>
-   <li>Develop a <strong>lighter and more compact version</strong> for better portability.</li>
+  <li>Develop a <strong>lighter and more compact version</strong> by improving the casing design.</li>
+  <li>Enhance camera features by integrating:
+    <ul>
+      <li>HD Lens for improved image quality.</li>
+      <li>Wide Lens for capturing a larger field of view.</li>
+    </ul>
+  </li>
+  <li>Implement a <strong>camera alignment notification</strong> to assist users in capturing text at the correct angle and distance.</li>
+  <li>Increase <strong>text detection capabilities</strong> by supporting more words and font styles.</li>
+  <li>Add <strong>mathematical equation detection</strong> for better accessibility in STEM learning.</li>
+  <li>Implement a <strong>Braille system reader</strong> for enhanced accessibility.</li>
+  <li>Use alternative <strong>voice synthesizers</strong> for clearer speech output in both English and Filipino.</li>
+  <li>Explore alternative <strong>cellular data technologies</strong> instead of the GSM module for improved connectivity.</li>
+  <li>Enhance object recognition features, including <strong>bill detection</strong> for currency identification.</li>
+  <li>Optimize battery efficiency for extended device usage.</li>
 </ul>
+
 
 <h2>📩 Contact & Contributions</h2>
 <p>Developed by: <strong>Vincent Manlesis & Andrey Manguiat</strong></p>
