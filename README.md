@@ -116,3 +116,15 @@ a reliable assistive solution for visually impaired students.</p>
 <h2>📩 Contact & Contributions</h2>
 <p>Developed by: <strong>Vincent Manlesis & Andrei Manguiat</strong></p>
 
+<h2>📩 Contact & Contributions</h2>
+<p><strong>Developed by:</strong> Vincent Manlesis & Andrei Manguiat</p>
+
+<h3>📢 Conference Presentation</h3>
+<p>
+    This project was presented at the <strong>International Conference on Clean and Sustainable Production (ICCSP)</strong>, organized by the <strong>Research Synergy Foundation</strong>, held as a virtual conference in <strong>Indonesia</strong>.
+</p>
+
+<ul>
+    <li>🎤 <strong>Role:</strong> Presenter</li>
+    <li>📜 <strong>Presentation Title:</strong> AI-WEAR: Text Reader Glasses for Visually Impaired Students</li>
+</ul>
